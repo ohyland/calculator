@@ -5,6 +5,7 @@ import myimage from "./images/iphone-icons.jpg";
 function App() {
   return (
     <div className="App calculator">
+
       <header className="App-header">
         <div className="iphone-icons">
           <img src={myimage} alt="iphone icons" />
@@ -12,11 +13,11 @@ function App() {
         <p id="time">12:00</p>
       </header>
 
-      <div className="results">
+      <section className="results">
         <input type="number" />
-      </div>
+      </section>
 
-      <div className="buttons">
+      <section className="buttons">
         <div>
           <button>AC</button>
           <button>+/-</button>
@@ -46,7 +47,8 @@ function App() {
           <button>.</button>
           <button>=</button>
         </div>
-      </div>
+      </section>
+      
     </div>
   );
 }
